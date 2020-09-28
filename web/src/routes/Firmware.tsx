@@ -274,7 +274,7 @@ const Firmware = () => {
       />
 
       <p className="text-sm">
-        <span className="opacity-25">...or </span>
+        <span className="opacity-25">如果你需要... </span>
         <span
           onClick={() =>
             downloadFirmware(
@@ -285,20 +285,20 @@ const Firmware = () => {
           }
           className="opacity-75 cursor-pointer underline"
         >
-          download
+          原固件升级文件
         </span>
       </p>
 
       {isWindows && (
         <p className="pt-4">
-          <span className="opacity-50">Don't forget to install </span>
+          <span className="opacity-50">Novation</span>
           <a
             href="https://github.com/mat1jaczyyy/apollo-studio/raw/master/Publish/novationusbmidi.exe"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-75 underline"
           >
-            Novation's USB driver!
+            官方USB驱动下载
           </a>
         </p>
       )}
