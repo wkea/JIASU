@@ -18,7 +18,7 @@ const MidiButton = ({ action, ...props }: any) => {
         }
       >
         <button {...props} className="font-sans" disabled={!launchpadStore.available}>
-          update
+          升级固件
         </button>
       </div>
       <ReactTooltip className="tooltip" effect="solid" place="top" />
