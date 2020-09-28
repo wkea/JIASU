@@ -150,14 +150,14 @@ const Modes = () => {
   return useObserver(() => (
     <RouteContainer {...{ ...getRootProps(), lightBg }}>
       <div>
-        <Button onClick={() => fileRef.current?.click()}>Import</Button>
+        <Button onClick={() => fileRef.current?.click()}>导入</Button>
         <Button
           disabled={!modeStore.modeBinary}
           onClick={() =>
             saveCustomMode(modeStore.modeBinary!, modeStore.modeName!)
           }
         >
-          Export
+          导出
         </Button>
       </div>
       <input
@@ -172,7 +172,7 @@ const Modes = () => {
         {modeError ||
           (modeStore.modeName
             ? `Loaded Mode: ${modeStore.modeName}`
-            : "No mode loaded!")}
+            : "没有加载模式！")}
       </p>
       <Launchpad size={300} colors={modeStore.modeColors} />
       <div className="flex items-center justify-center text-xl space-x-2">
@@ -181,7 +181,7 @@ const Modes = () => {
           checked={modeStore.allowLEDFeedback}
           onChange={(e) => (modeStore.allowLEDFeedback = e.target.checked)}
         />
-        <p>Allow External LED Feedback</p>
+        <p>允许外部LED反馈</p>
       </div>
       <div className="flex items-center justify-center text-xl">
         <p>Index:</p>
@@ -213,7 +213,7 @@ const Modes = () => {
           }
           onClick={uploadMode}
         >
-          Upload
+          上载
         </Button>
       </div>
     </RouteContainer>
