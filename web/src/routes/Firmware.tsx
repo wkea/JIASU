@@ -261,7 +261,7 @@ const Firmware = () => {
         }
         disabled={!launchpadStore.available}
       >
-        Update
+        固件升级
       </Button>
 
       <input
