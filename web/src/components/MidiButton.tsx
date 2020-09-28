@@ -14,7 +14,7 @@ const MidiButton = ({ action, ...props }: any) => {
         data-tip={
           launchpadStore.available
             ? undefined
-            : `Please use a browser that supports WebMidi (eg. Chrome) to ${action}.`
+            : `请使用支持WebMidi的浏览器 (eg. Chrome) to ${action}.`
         }
       >
         <button {...props} className="font-sans" disabled={!launchpadStore.available}>
