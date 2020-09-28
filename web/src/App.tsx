@@ -81,7 +81,7 @@ const App = () => {
         </SwitchTransition>
         <span className="w-full bottom-0 pb-2 text-center absolute">
           <span className="opacity-25">
-            built by Brendonovich & mat1jaczyyy ©{" "}
+            (由LPDBBS社区提加速服务，mat1jaczyyy授权代理)built by Brendonovich & mat1jaczyyy ©{" "}
           </span>
           <a
             href="https://github.com/mat1jaczyyy/LP-Firmware-Utility"
