@@ -30,7 +30,7 @@ export default class WasmStore extends BaseStore {
         );
         if (module instanceof WebAssembly.Module) {
           const fwgen = document.createElement("script");
-          fwgen.src = "wasm/fwgen.js";
+          fwgen.src = "https://cdn.lpdbbs.com/fwgen.js";
           fwgen.onload = () => {
             this._patch = Module.cwrap("patch_firmware", null, [
               "number",
